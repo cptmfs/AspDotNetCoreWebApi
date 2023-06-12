@@ -1,0 +1,30 @@
+﻿using Repositories.Contracts;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Repositories.EntityFramework
+{
+    public class RepositoryManager : IRepositoryManager
+    {
+
+        private readonly RepositoryContext _context;
+        //Lazy Loading => Nesne sadece kullanıldığı anda newlenecek aksi halde newleme gerçekleşmeyecek.
+        private readonly Lazy<IBookRepository> _bookRepository;
+
+        public RepositoryManager(RepositoryContext context)
+        {
+            _context = context;
+            _bookRepository = new Lazy<IBookRepository>(() => new BookRepository(_context));
+        }
+
+        public IBookRepository Book => _bookRepository.Value;
+
+        public void Save()
+        {
+           _context.SaveChanges();
+        }
+    }
+}

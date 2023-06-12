@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WebApi.Repositories;
+using Repositories.EntityFramework;
 
 #nullable disable
 
@@ -21,7 +21,7 @@ namespace WebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("WebApi.Models.Book", b =>
+            modelBuilder.Entity("Entities.Models.Book", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,6 +39,26 @@ namespace WebApi.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Books");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Price = 55m,
+                            Title = "Uçurtma Avcısı"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Price = 85m,
+                            Title = "Kürk Mantolu Madonna"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Price = 65m,
+                            Title = "İçimizdeki Şeytan"
+                        });
                 });
 #pragma warning restore 612, 618
         }
