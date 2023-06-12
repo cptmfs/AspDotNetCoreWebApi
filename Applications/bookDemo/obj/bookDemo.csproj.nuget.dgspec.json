@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj": {}
+    "C:\\Users\\ferit\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj": {
+    "C:\\Users\\ferit\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj",
+        "projectUniqueName": "C:\\Users\\ferit\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj",
         "projectName": "bookDemo",
-        "projectPath": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj",
-        "packagesPath": "C:\\Users\\Kaptan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\obj\\",
+        "projectPath": "C:\\Users\\ferit\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\bookDemo.csproj",
+        "packagesPath": "C:\\Users\\ferit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ferit\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bookDemo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kaptan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ferit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -81,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
