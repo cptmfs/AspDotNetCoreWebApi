@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EHKfr78W8ycpQK4Xa908LkZ8DTnLkZc+JOanoDyvimzyMxmCfuJ9CveNeez1t9ubS6ALUXcdnyCkDB8SLus9Jg==",
+  "dgSpecHash": "Ci3Su2WUM56d5ZHFXXAIz3nqk13Etzm1CvCvgD7up9mWPKA7MTmYAJgMuVSEXbhFsw3W2Yc6v0jycyskyU0LNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -63,6 +63,8 @@
     "C:\\Users\\Kaptan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "C:\\Users\\Kaptan\\.nuget\\packages\\nlog\\5.2.0\\nlog.5.2.0.nupkg.sha512",
+    "C:\\Users\\Kaptan\\.nuget\\packages\\nlog.extensions.logging\\5.3.0\\nlog.extensions.logging.5.3.0.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

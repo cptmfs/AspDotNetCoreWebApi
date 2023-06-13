@@ -15,6 +15,7 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.10",
+          "NLog": "5.2.0",
           "Presentation": "1.0.0",
           "Repositories": "1.0.0",
           "Services": "1.0.0",
@@ -537,6 +538,27 @@
           }
         }
       },
+      "NLog/5.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.0.1813"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "NLog": "5.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.0.360"
+          }
+        }
+      },
       "runtime.native.System/4.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -984,6 +1006,7 @@
       },
       "Services/1.0.0": {
         "dependencies": {
+          "NLog.Extensions.Logging": "5.3.0",
           "Repositories": "1.0.0"
         },
         "runtime": {
@@ -1410,6 +1433,20 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "NLog/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uYBgseY0m/9lQUbZYGsQsTBFOWrfs3iaekzzYMH6vFmpoOAvV8/bp1XxG/suZkwB5h8nAiTJAp7VENWRDKtKPA==",
+      "path": "nlog/5.2.0",
+      "hashPath": "nlog.5.2.0.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OocvBR+MqVMGWaBcGdvg2O/ZZOXyDzEtJHXc9ZbXawxspkQzTugsjngGH4EJ0mIUNw2wqJGKdsoSzc2A0b01dg==",
+      "path": "nlog.extensions.logging/5.3.0",
+      "hashPath": "nlog.extensions.logging.5.3.0.nupkg.sha512"
     },
     "runtime.native.System/4.0.0": {
       "type": "package",

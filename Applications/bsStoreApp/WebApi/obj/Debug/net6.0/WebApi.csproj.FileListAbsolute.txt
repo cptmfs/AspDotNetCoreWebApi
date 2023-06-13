@@ -146,3 +146,6 @@ C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\Web
 C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Services.pdb
 C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Presentation.dll
 C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Presentation.pdb
+C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\nlog.config
+C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.dll
+C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\NLog.Extensions.Logging.dll

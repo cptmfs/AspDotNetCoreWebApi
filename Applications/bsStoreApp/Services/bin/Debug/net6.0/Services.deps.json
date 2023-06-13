@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Services/1.0.0": {
         "dependencies": {
+          "NLog.Extensions.Logging": "5.3.0",
           "Repositories": "1.0.0"
         },
         "runtime": {
@@ -63,6 +64,17 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.222.6406"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
@@ -129,6 +141,27 @@
           "lib/net6.0/Microsoft.Extensions.Primitives.dll": {
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "NLog/5.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.2.0.1813"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/5.3.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging": "6.0.0",
+          "NLog": "5.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.0.360"
           }
         }
       },
@@ -200,6 +233,13 @@
       "path": "microsoft.extensions.caching.memory/6.0.1",
       "hashPath": "microsoft.extensions.caching.memory.6.0.1.nupkg.sha512"
     },
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qWzV9o+ZRWq+pGm+1dF+R7qTgTYoXvbyowRoBxQJGfqTpqDun2eteerjRQhq5PQ/14S+lqto3Ft4gYaRyl4rdQ==",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.DependencyInjection/6.0.1": {
       "type": "package",
       "serviceable": true,
@@ -241,6 +281,20 @@
       "sha512": "sha512-9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
       "path": "microsoft.extensions.primitives/6.0.0",
       "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
+    },
+    "NLog/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uYBgseY0m/9lQUbZYGsQsTBFOWrfs3iaekzzYMH6vFmpoOAvV8/bp1XxG/suZkwB5h8nAiTJAp7VENWRDKtKPA==",
+      "path": "nlog/5.2.0",
+      "hashPath": "nlog.5.2.0.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OocvBR+MqVMGWaBcGdvg2O/ZZOXyDzEtJHXc9ZbXawxspkQzTugsjngGH4EJ0mIUNw2wqJGKdsoSzc2A0b01dg==",
+      "path": "nlog.extensions.logging/5.3.0",
+      "hashPath": "nlog.extensions.logging.5.3.0.nupkg.sha512"
     },
     "System.Collections.Immutable/6.0.0": {
       "type": "package",

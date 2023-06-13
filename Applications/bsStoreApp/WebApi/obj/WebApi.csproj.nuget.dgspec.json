@@ -252,6 +252,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -353,6 +359,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
