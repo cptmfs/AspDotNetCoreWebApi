@@ -17,7 +17,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager(); // tek parametreli olduðu için parantez içine builder.Configuration eklemedik.
 builder.Services.ConfigureServiceManager();
-builder.Services.ConfigureLoggerService();  
+builder.Services.ConfigureLoggerService();
+builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
 
