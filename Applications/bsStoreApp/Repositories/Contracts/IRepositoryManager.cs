@@ -11,7 +11,7 @@ namespace Repositories.Contracts
         // Unit of Work Pattern
 
         IBookRepository Book { get; }
-        void Save();
+        Task SaveAsync();
 
     }
 }
