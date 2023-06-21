@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NLog;
+using Presentation.ActionFilters;
 using Repositories.EntityFramework;
 using Services.Contracts;
 using WebApi.Extensions;
@@ -19,6 +20,7 @@ builder.Services.AddControllers(config =>
     .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly).AddNewtonsoftJson();
 
+
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -30,6 +32,7 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager(); // tek parametreli olduðu için parantez içine builder.Configuration eklemedik.
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureActionFilters();
 builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
