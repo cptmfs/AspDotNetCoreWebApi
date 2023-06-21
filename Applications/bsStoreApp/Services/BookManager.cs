@@ -48,16 +48,12 @@ namespace Services
         public async Task <BookDto> GetBookByIdAsync(int id, bool trackChanges)
         {
             var book = await GetOneBookAndCheckExists(id, trackChanges);
-            if (book is null)
-                    throw new BookNotFoundException(id);
             return _mapper.Map<BookDto>(book);
         }
 
         public async Task <(BookDtoForUpdate bookDtoForUpdate, Book book)> GetBookForPatchAsync(int id, bool trackChanges)
         {
-            var book = await GetOneBookAndCheckExists(id, trackChanges);
-            if (book is null)
-                throw new BookNotFoundException(id);
+            var book = await GetOneBookAndCheckExists(id, trackChanges);        
             var bookDtoForUpdate = _mapper.Map<BookDtoForUpdate>(book);
             return (bookDtoForUpdate, book);
         }
@@ -70,13 +66,8 @@ namespace Services
 
         public async Task UpdateBookAsync(int id, BookDtoForUpdate bookDto, bool trackChanges )
         {
-            // check entity
-            
-
-
-            //Mapping
-            entity = _mapper.Map<Book>(bookDto);
-
+            var entity = await GetOneBookAndCheckExists(id, trackChanges);
+            entity=_mapper.Map<Book>(bookDto);    
             _manager.Book.UpdateBook(entity);
             await _manager.SaveAsync();
         }

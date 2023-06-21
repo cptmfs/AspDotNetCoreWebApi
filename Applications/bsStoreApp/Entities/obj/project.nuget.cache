@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+eDTmoTmghcsPN4cPUDZGjQJ4nUtwDGwK6TjWXd5XTHUfEeZFa8+k84vKQi3KGu+iUJb/x15kTe90XVuMOl3Ow==",
+  "dgSpecHash": "DjbEREh9V6Xv5UqKrstsQ5jEz7vTtKS3GuG4hSr5WTRxNGvaQmBYSoW7MOH/ZC3+h+RFHVTxVAASA+Ztme1Bfw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\source\\repos\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
