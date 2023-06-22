@@ -33,6 +33,7 @@ builder.Services.ConfigureRepositoryManager(); // tek parametreli olduðu için pa
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureActionFilters();
+builder.Services.ConfigureCors();
 builder.Services.AddAutoMapper(typeof(Program));
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -51,6 +52,8 @@ if (app.Environment.IsProduction())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
