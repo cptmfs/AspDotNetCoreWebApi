@@ -51,3 +51,11 @@
 2023-06-22 18:20:17.2489 Info Message Template Auto Format enabled
 2023-06-22 18:20:17.2954 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-06-22 18:20:17.3131 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\nlog.config
+2023-06-22 19:05:41.6543 Info AppDomain Shutting down. LogFactory closing...
+2023-06-22 19:05:41.6687 Info LogFactory has been closed.
+2023-06-24 16:06:07.9026 Info Message Template Auto Format enabled
+2023-06-24 16:06:07.9479 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-24 16:06:07.9646 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\nlog.config
+2023-06-24 16:18:24.8141 Info Message Template Auto Format enabled
+2023-06-24 16:18:24.8609 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-06-24 16:18:24.8785 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\nlog.config
