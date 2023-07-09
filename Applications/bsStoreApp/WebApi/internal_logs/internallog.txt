@@ -59,3 +59,6 @@
 2023-06-24 16:18:24.8141 Info Message Template Auto Format enabled
 2023-06-24 16:18:24.8609 Info Registered target NLog.Targets.FileTarget(Name=logfile)
 2023-06-24 16:18:24.8785 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\nlog.config
+2023-07-09 23:46:55.7483 Info Message Template Auto Format enabled
+2023-07-09 23:46:55.8022 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-07-09 23:46:55.8200 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\nlog.config
