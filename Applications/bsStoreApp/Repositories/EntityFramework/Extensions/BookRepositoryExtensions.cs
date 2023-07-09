@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Dynamic.Core;
 
 namespace Repositories.EntityFramework.Extensions
 {
@@ -22,6 +24,24 @@ namespace Repositories.EntityFramework.Extensions
                 return books;
             var lowerCaseTerm=searchTerm.Trim().ToLower();
             return books.Where(book => book.Title.ToLower().Contains(lowerCaseTerm));
+        }
+
+        public static IQueryable<Book> Sort (this IQueryable<Book> books,
+            string orderByQueryString)
+        {
+            if (string.IsNullOrWhiteSpace(orderByQueryString))
+                 return books.OrderBy(b => b.Id);
+
+
+            var orderQuery=OrderQueryBuilder.CreateOrderQuery<Book>(orderByQueryString);
+            
+
+            if (orderQuery is null)
+                return books.OrderBy(b => b.Id);
+
+            return books.OrderBy(orderQuery);
+            
+
         }
     }
 }

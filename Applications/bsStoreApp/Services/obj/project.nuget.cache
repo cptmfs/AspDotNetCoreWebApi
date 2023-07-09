@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mwtla0sZElFj2LfEYfIyNWBzIA1VUIGJwWBDPVlBJlBqycGhxBYn1fS34oF7T+jo2qb7jRyZCT7Zeeug/WvTPQ==",
+  "dgSpecHash": "YL8k2xaOQwPyZ1SG4ohDz+3G5+VfO/It1L20iRvGJpElLyFyhd8iHFhwUPJHf9SN3CsEMfALCZOHPkOsEAD3QA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\Services\\Services.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\Kaptan\\.nuget\\packages\\nlog.extensions.logging\\5.3.0\\nlog.extensions.logging.5.3.0.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Kaptan\\.nuget\\packages\\system.linq.dynamic.core\\1.3.3\\system.linq.dynamic.core.1.3.3.nupkg.sha512",
     "C:\\Users\\Kaptan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

@@ -170,3 +170,4 @@ C:\Users\ferit\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebA
 C:\Users\ferit\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Services.pdb
 C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Kaptan\Documents\GitHub\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
