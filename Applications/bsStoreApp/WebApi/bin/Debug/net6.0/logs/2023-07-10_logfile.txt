@@ -11,3 +11,7 @@
 2023-07-10 00:10:59.3521 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:10:59.352155+03:00"}
 2023-07-10 00:11:13.2819 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:11:13.2818913+03:00"}
 2023-07-10 00:15:37.0492 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:15:37.0405734+03:00"}
+2023-07-10 00:48:02.3664 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:48:02.3567117+03:00"}
+2023-07-10 00:48:11.9854 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:48:11.9854118+03:00"}
+2023-07-10 00:48:15.5945 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:48:15.5945211+03:00"}
+2023-07-10 00:48:24.6776 INFO {"ModelName":"OnActionExecuting","Controller":"Books","Action":"GetAllBooks","Id":null,"CreateAt":"2023-07-10T00:48:24.677587+03:00"}
