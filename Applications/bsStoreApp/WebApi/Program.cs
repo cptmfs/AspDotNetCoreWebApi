@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NLog;
 using Presentation.ActionFilters;
 using Repositories.EntityFramework;
+using Services;
 using Services.Contracts;
 using WebApi.Extensions;
 
@@ -16,9 +17,10 @@ builder.Services.AddControllers(config =>
     config.RespectBrowserAcceptHeader = true; //içerik pazarlýðýna açýk
     config.ReturnHttpNotAcceptable = true; // Desteklenmeyen format için 406 kodu
 })
-    .AddCustomCsvFormatter()
     .AddXmlDataContractSerializerFormatters()
-    .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly).AddNewtonsoftJson();
+    .AddCustomCsvFormatter()
+    .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly);
+    //.AddNewtonsoftJson();
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
@@ -36,6 +38,9 @@ builder.Services.ConfigureActionFilters();
 builder.Services.ConfigureCors();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureDataShapper();
+builder.Services.AddCustomeMediaTypes();
+builder.Services.AddScoped<IBookLinks, BookLinks>();
+
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
 

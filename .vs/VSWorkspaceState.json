@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Applications",
+    "\\Applications\\bsStoreApp",
+    "\\Applications\\bsStoreApp\\Services"
   ],
-  "SelectedNode": "\\bsStoreApp.sln",
   "PreviewInSolutionExplorer": false
 }

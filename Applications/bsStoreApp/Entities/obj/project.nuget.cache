@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "DjbEREh9V6Xv5UqKrstsQ5jEz7vTtKS3GuG4hSr5WTRxNGvaQmBYSoW7MOH/ZC3+h+RFHVTxVAASA+Ztme1Bfw==",
+  "dgSpecHash": "BS8ZEEEu9kIcMQAuymEdhknZg24aHMCNh2ISO39osv8Pzg5yevEF9T8UysFXypdi1M9C4anyIhgBNz1yN1nHJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kaptan\\Documents\\GitHub\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\Entities\\Entities.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\KAPTAN\\Source\\Repos\\cptmfs\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\Entities\\Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
