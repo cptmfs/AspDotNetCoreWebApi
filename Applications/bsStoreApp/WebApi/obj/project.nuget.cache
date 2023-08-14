@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c0Z01h4ncylRNrc30Yn0EHhNH1FQ+2FQchB1EKNVn38+FCJRDxS7/QViFa10xiH6jvaG2ZLIIJi6eOXFyNV5Pw==",
+  "dgSpecHash": "8Mh4Fy9uTVjgIVBdoAOjMkcF1s1od+mM2l7qxMTY2TQ8uNBDkCCMMExsU4c0xCGflem22a+vFYKXuQXERMbCBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\KAPTAN\\Source\\Repos\\cptmfs\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.core\\2.2.5\\microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.formatters.json\\2.2.0\\microsoft.aspnetcore.mvc.formatters.json.2.2.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.0.0\\microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.responsecaching.abstractions\\2.2.0\\microsoft.aspnetcore.responsecaching.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.routing\\2.2.0\\microsoft.aspnetcore.routing.2.2.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",

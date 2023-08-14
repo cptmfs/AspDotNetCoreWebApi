@@ -40,6 +40,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureDataShapper();
 builder.Services.AddCustomeMediaTypes();
 builder.Services.AddScoped<IBookLinks, BookLinks>();
+builder.Services.ConfigureVersioning();
 
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
