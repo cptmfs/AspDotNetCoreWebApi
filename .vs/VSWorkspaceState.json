@@ -5,8 +5,10 @@
     "\\Applications\\bsStoreApp",
     "\\Applications\\bsStoreApp\\Entities",
     "\\Applications\\bsStoreApp\\Entities\\Models",
-    "\\Applications\\bsStoreApp\\Services"
+    "\\Applications\\bsStoreApp\\Services",
+    "\\Applications\\bsStoreApp\\WebApi",
+    "\\Applications\\bsStoreApp\\WebApi\\Extensions"
   ],
-  "SelectedNode": "\\Applications\\bsStoreApp\\Entities\\Models\\ShapedEntity.cs",
+  "SelectedNode": "\\Applications\\bsStoreApp\\WebApi\\Extensions\\ServicesExtensions.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -16,6 +16,7 @@ builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader = true; //içerik pazarlýðýna açýk
     config.ReturnHttpNotAcceptable = true; // Desteklenmeyen format için 406 kodu
+    config.CacheProfiles.Add("5mins", new CacheProfile() { Duration = 300 }); // 5 dakikalýk bir cache profili oluþturduk ve bunu profili kullanacaðýz. ->> " [ResponseCache(CacheProfileName ="5mins")] "
 })
     .AddXmlDataContractSerializerFormatters()
     .AddCustomCsvFormatter()
@@ -41,6 +42,8 @@ builder.Services.ConfigureDataShapper();
 builder.Services.AddCustomeMediaTypes();
 builder.Services.AddScoped<IBookLinks, BookLinks>();
 builder.Services.ConfigureVersioning();
+builder.Services.ConfigureResponseCaching();
+builder.Services.ConfigureHttpCacheHeaders();
 
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -61,6 +64,10 @@ if (app.Environment.IsProduction())
 app.UseHttpsRedirection();
 
 app.UseCors("CorsPolicy");
+
+app.UseResponseCaching(); // Microsoft Cors'dan sonra Caching ifadesine yer vermemizi öneriyor.
+app.UseHttpCacheHeaders();
+
 
 app.UseAuthorization();
 

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "8Mh4Fy9uTVjgIVBdoAOjMkcF1s1od+mM2l7qxMTY2TQ8uNBDkCCMMExsU4c0xCGflem22a+vFYKXuQXERMbCBA==",
+  "dgSpecHash": "J6t8IaDg4pSxrV2HlA8r2pNRebqL5pRWE2H+9KSKZExPK5zu8un8qQKi+L1o+Pe6HWTnTFLgZeOlLbOJo4AebA==",
   "success": true,
   "projectFilePath": "C:\\Users\\KAPTAN\\Source\\Repos\\cptmfs\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KAPTAN\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\marvin.cache.headers\\6.0.0\\marvin.cache.headers.6.0.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
