@@ -58,11 +58,15 @@ namespace WebApi.Extensions
                 if (sysemTextJsonOutputFormatter is not null)
                 {
                     sysemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.cptmfs.hateoas+json");
+
+                    sysemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.cptmfs.apiroot+json");
                 }
                 var xmlOutputFormatter = config.OutputFormatters.OfType<XmlDataContractSerializerOutputFormatter>()?.FirstOrDefault();
                 if (xmlOutputFormatter is not null)
                 {
                     xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.cptmfs.hateoas+xml");
+                    xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.cptmfs.apiroot+xml");
+
                 }
             });
         }
