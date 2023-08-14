@@ -3,7 +3,10 @@
     "",
     "\\Applications",
     "\\Applications\\bsStoreApp",
+    "\\Applications\\bsStoreApp\\Entities",
+    "\\Applications\\bsStoreApp\\Entities\\Models",
     "\\Applications\\bsStoreApp\\Services"
   ],
+  "SelectedNode": "\\Applications\\bsStoreApp\\Entities\\Models\\ShapedEntity.cs",
   "PreviewInSolutionExplorer": false
 }
