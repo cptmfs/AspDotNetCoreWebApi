@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "J6t8IaDg4pSxrV2HlA8r2pNRebqL5pRWE2H+9KSKZExPK5zu8un8qQKi+L1o+Pe6HWTnTFLgZeOlLbOJo4AebA==",
+  "dgSpecHash": "U5vJ7XmlM6SVcprHC3iRPhXgIkkkxeL7GLJeinvJhlbxSmG0GcjkeofxBcwzEOS+Y+7q9MjuDGxmq2qeNptCUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\KAPTAN\\Source\\Repos\\cptmfs\\AspDotNetCoreWebApi\\Applications\\bsStoreApp\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KAPTAN\\.nuget\\packages\\aspnetcoreratelimit\\4.0.1\\aspnetcoreratelimit.4.0.1.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\KAPTAN\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
