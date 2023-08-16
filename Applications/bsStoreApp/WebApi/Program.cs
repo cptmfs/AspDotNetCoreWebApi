@@ -31,7 +31,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.ConfigureSwagger();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager(); // tek parametreli olduðu için parantez içine builder.Configuration eklemedik.
 builder.Services.ConfigureServiceManager();
@@ -60,7 +60,11 @@ app.ConfigureExceptionHandler(logger);
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(s =>
+    {
+        s.SwaggerEndpoint("/swagger/v1/swagger.json", "cptmfs Web Api v1");
+        s.SwaggerEndpoint("/swagger/v2/swagger.json", "cptmfs Web Api v2");
+    });
 }
 if (app.Environment.IsProduction())
 {
