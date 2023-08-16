@@ -176,7 +176,6 @@ C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfoInputs.cache
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.AssemblyInfo.cs
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.dll
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\refint\WebApi.dll
@@ -261,3 +260,10 @@ C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Marvin.Cache.Headers.dll
 C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\AspNetCoreRateLimit.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\KAPTAN\Source\Repos\cptmfs\AspDotNetCoreWebApi\Applications\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.MvcApplicationPartsAssemblyInfo.cs

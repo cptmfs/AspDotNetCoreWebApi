@@ -3,6 +3,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Entities.RequestFeatures;
 using Marvin.Cache.Headers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.ActionFilters;
@@ -30,6 +31,7 @@ namespace Presentation.Controllers
         {
             _manager = manager;
         }
+        [Authorize]
         [HttpHead]
         [HttpGet(Name = "GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
@@ -52,6 +54,7 @@ namespace Presentation.Controllers
                 Ok(result.linkResponse.ShapedEntities);
         }
         [HttpGet("{id:int}")]
+        [Authorize] // (Roles = "User, Editor, Admin") 3 ü içinde aynı oldugu için bu tanıma gerek kalmayacak.
         public async Task<IActionResult> GetByIdAsync([FromRoute(Name = "id")] int id)
         {
             var book = await _manager.BookService.GetBookByIdAsync(id, false);
@@ -59,6 +62,7 @@ namespace Presentation.Controllers
         }
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateBookAsync")]
+        [Authorize(Roles = "Editor, Admin")]
         public async Task<IActionResult> CreateBookAsync([FromBody] BookDtoForInsertion bookDto)
         {
             var book = await _manager.BookService.CreateBookAsync(bookDto);
@@ -66,6 +70,7 @@ namespace Presentation.Controllers
         }
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id:int}")]
+        [Authorize(Roles = "Editor, Admin")]
         public async Task<IActionResult> UpdateBookAsync([FromRoute(Name = "id")] int id, [FromBody] BookDtoForUpdate bookDto)
         {
             if (bookDto is null)
@@ -77,12 +82,14 @@ namespace Presentation.Controllers
             return NoContent(); //20
         }
         [HttpDelete("{id:int}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteBookAsync([FromRoute(Name = "id")] int id)
         {
             await _manager.BookService.DeleteBookAsync(id, false);
             return NoContent(); // 204
         }
         [HttpPatch("{id:int}")]
+        [Authorize(Roles = "Editor, Admin")]
         public async Task<ActionResult> PartiallyUpdateBookAsync([FromRoute(Name = "id")] int id, [FromBody] JsonPatchDocument<BookDtoForUpdate> bookPatch)
         {
             if (bookPatch is null)

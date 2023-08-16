@@ -48,7 +48,8 @@ builder.Services.ConfigureHttpCacheHeaders(); //Caching
 builder.Services.AddMemoryCache(); // Rate Limit
 builder.Services.ConfigureRateLimitingOptions(); // Rate Limit
 builder.Services.AddHttpContextAccessor(); // Rate Limit
-
+builder.Services.ConfigureIdentity(); //Identity
+builder.Services.ConfigureJWT(builder.Configuration); //Identity -ConfigureJWT
 
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -73,7 +74,7 @@ app.UseCors("CorsPolicy");
 app.UseResponseCaching(); // Microsoft Cors'dan sonra Caching ifadesine yer vermemizi öneriyor.
 app.UseHttpCacheHeaders();
 
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
