@@ -61,6 +61,12 @@ namespace Presentation.Controllers
             var book = await _manager.BookService.GetBookByIdAsync(id, false);
             return Ok(book);
         }
+        [Authorize]
+        [HttpGet("details")]
+        public async Task<IActionResult> GetAllBooksWithDetailAsync()
+        {
+            return Ok(await _manager.BookService.GetAllBooksWithDetailsAsync(false));
+        }
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name = "CreateBookAsync")]
         [Authorize(Roles = "Editor, Admin")]
@@ -80,7 +86,7 @@ namespace Presentation.Controllers
                 return UnprocessableEntity(ModelState); // 422
 
             await _manager.BookService.UpdateBookAsync(id, bookDto, false);
-            return NoContent(); //20
+            return NoContent(); //204
         }
         [HttpDelete("{id:int}")]
         [Authorize(Roles = "Admin")]

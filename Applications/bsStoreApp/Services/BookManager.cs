@@ -18,21 +18,27 @@ namespace Services
 {
     public class BookManager : IBookService
     {
+        private readonly ICategoryService _categoryService;
         private readonly IRepositoryManager _manager;
         private readonly ILoggerService _logger;
         private readonly IMapper _mapper;
         private readonly IBookLinks _bookLinks;
-        public BookManager(IRepositoryManager manager, ILoggerService logger , IMapper mapper,IBookLinks bookLinks)
+        public BookManager(IRepositoryManager manager, ILoggerService logger, IMapper mapper, IBookLinks bookLinks, ICategoryService categoryService)
         {
             _manager = manager;
             _logger = logger;
             _mapper = mapper;
             _bookLinks = bookLinks;
+            _categoryService = categoryService;
         }
 
         public async Task <BookDto> CreateBookAsync(BookDtoForInsertion bookDto)
         {
+            var category = await _categoryService.GetOneCategoryByIdAsync(bookDto.CategoryId, false);
+
+
             var entity = _mapper.Map<Book>(bookDto);
+
             _manager.Book.CreateBook(entity);
             await _manager.SaveAsync();
             return _mapper.Map<BookDto>(entity);
@@ -64,6 +70,13 @@ namespace Services
             return books;
         }
 
+        public async Task<IEnumerable<Book>> GetAllBooksWithDetailsAsync(bool trackChanges)
+        {
+            return await _manager
+                .Book
+                .GetAllBooksWithDetailsAsync(trackChanges);
+        }
+
         public async Task <BookDto> GetBookByIdAsync(int id, bool trackChanges)
         {
             var book = await GetOneBookAndCheckExists(id, trackChanges);
@@ -85,6 +98,7 @@ namespace Services
 
         public async Task UpdateBookAsync(int id, BookDtoForUpdate bookDto, bool trackChanges )
         {
+            var category = await _categoryService.GetOneCategoryByIdAsync(bookDto.CategoryId, false);
             var entity = await GetOneBookAndCheckExists(id, trackChanges);
             entity=_mapper.Map<Book>(bookDto);    
             _manager.Book.UpdateBook(entity);

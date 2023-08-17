@@ -21,8 +21,8 @@ builder.Services.AddControllers(config =>
 })
     .AddXmlDataContractSerializerFormatters()
     .AddCustomCsvFormatter()
-    .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly);
-    //.AddNewtonsoftJson();
+    .AddApplicationPart(typeof(Presentation.AssemblyRefence).Assembly)
+    .AddNewtonsoftJson(opt=> opt.SerializerSettings.ReferenceLoopHandling=Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
@@ -50,6 +50,9 @@ builder.Services.ConfigureRateLimitingOptions(); // Rate Limit
 builder.Services.AddHttpContextAccessor(); // Rate Limit
 builder.Services.ConfigureIdentity(); //Identity
 builder.Services.ConfigureJWT(builder.Configuration); //Identity -ConfigureJWT
+
+builder.Services.RegisterRepositories();
+builder.Services.RegisterServices();
 
 var app = builder.Build();
 var logger = app.Services.GetRequiredService<ILoggerService>();

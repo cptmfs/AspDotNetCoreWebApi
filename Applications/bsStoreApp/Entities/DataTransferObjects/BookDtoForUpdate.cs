@@ -11,5 +11,7 @@ namespace Entities.DataTransferObjects
     {
         [Required]
         public  int Id { get; set; }
+        [Required(ErrorMessage = "CategoryId is required.")]
+        public int CategoryId { get; init; }
     }
 }

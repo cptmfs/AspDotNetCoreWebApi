@@ -2,12 +2,6 @@
 using Entities.LinkModels;
 using Entities.Models;
 using Entities.RequestFeatures;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Services.Contracts
 {
@@ -22,5 +16,6 @@ namespace Services.Contracts
 
         Task SaveChangesForPatchAsync(BookDtoForUpdate bookDtoForUpdate,Book book);
         Task<List<Book>> GetAllBooksAsync(bool trackChanges);
+        Task<IEnumerable<Book>> GetAllBooksWithDetailsAsync(bool trackChanges);
     }
 }
